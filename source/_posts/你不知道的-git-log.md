@@ -14,11 +14,11 @@ tags: git
 
 
 
-### 一个关于Git Repository 的例子
+# 一个关于Git Repository 的例子
 
 为了配合这个例子，我特地准备了一个 git 仓库，可以克隆下来并且运行它: 
 
-```git
+```bash
 $ git clone https://github.com/ianmiell/cookbook-openshift3-frozen
 $ cd cookbook-openshift3-frozen
 ```
@@ -29,7 +29,7 @@ $ cd cookbook-openshift3-frozen
 
 git log 是应该是你最熟悉的 vanlilla log 命令: 
 
-```git
+```bash
 $ git log
 
 commit f40f8813d7fb1ab9f47aa19a27099c9e1836ed4f 
@@ -61,7 +61,7 @@ latest
 
 其实在大部分时间我都不会关心作者或者提交日期, 因此如果想要在一块屏幕里看见更多的信息，我们可以使用 `--oneline`  命令来仅显示提交的 `id` 信息以及每一个提交的评论信息
 
-```git
+```shell
 $ git log --oneline
 ecab26a JENKINSFILE: Upgrade from 1.3 only
 886111a JENKINSFILE: default is master if not a multi-branch Jenkins build
@@ -77,7 +77,7 @@ bf36cf5 Merge branch 'master' of github.com:IshentRas/cookbook-openshift3
 
 此时 `--decorate` 命令就为我们提供了以上信息:
 
-```git
+```bash
 $ git log --oneline --decorate
 ecab26a (HEAD -> master, origin/master, origin/HEAD) JENKINSFILE: Upgrade from 1.3 only
 886111a JENKINSFILE: default is master if not a multi-branch Jenkins build
@@ -90,7 +90,7 @@ ecab26a (HEAD -> master, origin/master, origin/HEAD) JENKINSFILE: Upgrade from 1
 
 **--all**
 
-```git
+```shell
 $ git log --oneline --decorate --all
 ecab26a (HEAD -> master, origin/master, origin/HEAD) JENKINSFILE: Upgrade from 1.3 only
 886111a JENKINSFILE: default is master if not a multi-branch Jenkins build
@@ -111,7 +111,7 @@ e1ee997 Merge branch 'development'
 
 `--graph` 命令除了能够提供以上信息之外，还能让我们能够在命令行中看见类似 `git GUI` 的输出，让我们随时随地能够更轻松的理解和掌握我们所需的信息。
 
-```git
+```shell
 $ git log --oneline --decorate --all --graph
 * ecab26a (HEAD -> master, origin/master, origin/HEAD) JENKINSFILE: Upgrade from 1.3 only
 * 886111a JENKINSFILE: default is master if not a multi-branch Jenkins build
@@ -134,7 +134,7 @@ $ git log --oneline --decorate --all --graph
 
 
 
-### 不要惊慌！
+# 不要惊慌！
 
 以上介绍的问题可能对新手来说比较难以理解和接受，也没有什么好的教程能够指引。但是我会提供一些小技巧来帮助新手更容易的阅读和理解 `git log`
 
@@ -142,7 +142,7 @@ $ git log --oneline --decorate --all --graph
 
 我们可以通过下面这个例子帮助我们看清楚每条分支内容上的改动在分支线上的呈现效果:
 
-```git
+```shell
 | * bf36cf5 Merge branch 'master' of github.com:IshentRas/cookbook-openshift3
 | |\ 
 | | * 313c03a JENKINSFILE: quick mode is INFO level only
@@ -164,7 +164,7 @@ $ git log --oneline --decorate --all --graph
 
 它将移除掉提交里所有我们没有标记的信息，当然，最新的一次提交是永远存在的:
 
-```git
+```shell
 $ git log --oneline --decorate --all --graph --simplify-by-decoration
 * ecab26a (HEAD -> master, origin/master, origin/HEAD) JENKINSFILE: Upgrade from 1.3 only
 | * 774a816 (origin/first_etcd) first_etcd
@@ -177,13 +177,13 @@ $ git log --oneline --decorate --all --graph --simplify-by-decoration
 
 
 
-### 文件信息
+# 文件信息
 
 使用 `--oneline` 命令展示出来的信息是有点稀少的，所以通常 `--stat` 能够提供给你更多关于每次变动的信息。
 
 数字表示更改的行数，用一个 `+` 符号表示插入，然后 `-` 符号表示删除。这里是没有更改概念的，假如一行只有一个单次被修改了，也是新增的意思。
 
-```git
+```shell
 $ git log --oneline --decorate --all --graph --stat
 * ecab26a (HEAD -> master, origin/master, origin/HEAD) JENKINSFILE: Upgrade from 1.3 only
 | Jenkinsfile.upgrades | 2 +-
@@ -198,13 +198,13 @@ $ git log --oneline --decorate --all --graph --stat
 
 
 
-### 正则在提交中的运用
+# 正则在提交中的运用
 
 这个命令使用起来也是很方便的。`-G` 命令能够允许您搜索所有提交，并且通过正则表达式只返回提交和它们的文件。
 
 下面这个例子j就展示了通过正则表达式搜索文本为 `chef-client`  的相关变动:
 
-```git
+```shell
 $ git log -G 'chef-client' --graph --oneline --stat
 ...
 * 22c2b1b Fix script for deploying origin
