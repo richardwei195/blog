@@ -9,7 +9,7 @@ tags:
 
 [GitHub](https://github.com/richardwei195/tb-excel)
 
-## 背景
+# 背景
 
 在实际的生产环境中，为了避免大量的io和并发等性能压力，我们通常不会将文件直接上传或者生成到本地，比如我们要解析一个excel文件(xlsx)，我们通常会将文件上传到文件服务器(OSS,  Striker)，然后通过访问文件服务器拿到我们想要的资源进行处理
 
@@ -20,9 +20,9 @@ tags:
 - 通过http请求拿到的数据能够直接解析
 - 高度可定制化
 
-## 撸起袖子干
+# 撸起袖子干
 
-### 净化原始数据
+## 净化原始数据
 
 > 我们将Excel一行约定为 `row` , 列约定为 `cel`
 
@@ -116,7 +116,7 @@ Excel中单元格的格式及其丰富, 比如日期格式，货币格式，超�
 
 可以看出，这绝不是我们想要的结果，而这仅仅是所有格式中的一种(超链接), 也是比较常见的一种，因此在load完毕后，我们还需要对拿到的数据进行过滤和筛选，过滤掉无用的信息:
 
-```javascript
+```js
 const _ = require('lodash')
 
 function cellToString (cell) {
@@ -146,7 +146,7 @@ function cellToString (cell) {
 
 通过这样一个递归函数，我们可以过滤掉大部分常用的格式，包括Mac下Number中使用到的格式，而对于未知的格式，我们应该手动抛出一个Error，这样我们就可以拿到一个较为干净的数据
 
-### 数据格式化
+## 数据格式化
 
 > 对一手数据进行再加工，价值最大化
 
@@ -154,7 +154,7 @@ function cellToString (cell) {
 
 假设我们拿到的二维数组是这样:
 
-```javascript
+```js
 [
     ['a', 'b'],
   	['c', 'd']
@@ -163,7 +163,7 @@ function cellToString (cell) {
 
 而我们最终希望数据能够张这样:
 
-```javascript
+```js
 [
     {
         first: 'a',
@@ -180,7 +180,7 @@ function cellToString (cell) {
 
 想要达到这样的结果其实也不难，我们只需要事先定义好我们的规则，然后在遍历数组的时候进行赋值即可:
 
-```javascript
+```js
 for (let index = 0; index < this.rows.length; index++) {
   let row = this.rows[index]
   // Remove the serial number of the first column of each row
@@ -199,7 +199,7 @@ for (let index = 0; index < this.rows.length; index++) {
 
 在Excel中，可能需要过滤掉开头的第一行或者几行，我们也可以写出相应的方法进行过滤
 
-### 优化
+## 优化
 
 我们通常会把以上的每一步封装成为一个工具类进行调用，其中每一步都是环环相扣，我们需要考虑更多的场景以及优化相关的问题：
 
@@ -211,7 +211,7 @@ for (let index = 0; index < this.rows.length; index++) {
 - 对解析的数量进行限制
 - ……
 
-```javascript
+```js
 'use strict'
 
 const Excel = require('exceljs')

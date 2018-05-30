@@ -6,12 +6,12 @@ tags:
   - nodejs
 ---
 
-###引言
+# 引言
 ---
 node自己本身可以作为服务器进行驱动，但是node本身对文件的处理能力并不是很好，所以当我们的生产环境中应尽量使用nginx来处理静态的资源以及反向代理，同时也解决了node分布式以及负载均衡的相关问题。
 
 
-###nginx的安装以及配置
+# nginx的安装以及配置
 ---
 这里以cenos环境为基础进行配置
 
@@ -21,8 +21,9 @@ node自己本身可以作为服务器进行驱动，但是node本身对文件的
 
 2、PRCE安装
 （1）下载：
-
-	wget http://downloads.sourceforge.net/project/pcre/pcre/8.35/pcre-8.35.tar.gz
+    ```shell
+        wget http://downloads.sourceforge.net/project/pcre/pcre/8.35/pcre-8.35.tar.gz
+    ```
 （2）解压
 
 	tar -zxvf pcre-8.35.tar.gz

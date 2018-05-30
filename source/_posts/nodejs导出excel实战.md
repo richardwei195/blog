@@ -14,13 +14,13 @@ tags:
 
 64位系统也只能占1.4G左右, 因此当我们要生成或者读取大文件的时候内存的吃紧会给我们造成极大的困扰, 遇到这样的情况Node给了我们一个很好的解决方法 `stream`
 
-## 简单的了解一下流
+# 简单的了解一下流
 
 > 流是数据的集合 —— 就像数组或字符串一样。区别在于流中的数据可能不会立刻就全部可用，并且你无需一次性地把这些数据全部放入内存。这使得流在操作大量数据或是数据从外部来源逐段发送过来的时候变得非常有用
 
 管道与流的结合在linux中运用得非常多, 也使得linux能够通过 `pipe` 组合多个命令实现复杂的功能, 其实通俗一点来说, `stream` 就是把我们需要一口气吃下的东西分成多次按量的吃下去, 避免一口气吃撑, 在吃的过程中, 我们甚至可以边 ”吃“ 边 ”排“（transform）, 使我们的身体能够保持一个均衡低负荷的状态, 同时, 也就是保证node进程内存不会太吃紧的条件.
 
-### nodejs中的流
+## nodejs中的流
 
 因为先天的原因, 流在node中通常被我们用来处理大文件, 甚至说在nodejs的各类模块中均采用了 `stream`
 
@@ -36,7 +36,7 @@ tags:
 
 没错也就是四种类型, 其中transform继承自duplex
 
-### 流的典型例子
+## 流的典型例子
 
 在nodejs中读取和写入大文件通常是流应用得最广泛、最重要的场景之一, 这也是写这篇博客的原因之一, 因此以一个简单的文件读取的例子作为我们了解流的小Demo
 
@@ -84,22 +84,22 @@ server.listen(3000)
 可以看见内存基本稳定在11m, 这证明了采用读取流方式在内存上给我们带来了极大的优化, 当然这只是一个小Demo, 我们可以尝试着去读取1G 甚至超过2G的文件, fs.readFile()的方式可能就会突破内存的限制而导致进程crash掉, 假如在生产环境中, 请求多并发相对较高的环境下, 这种方式是行不通的
 
 
-## 通过流的方式导出Excel文件
+# 通过流的方式导出Excel文件
 
-### 背景
+## 背景
 
 需求是希望能够将项目下的所有分组以一个项目excel文件包含多个分组sheet导出
 
 如果是导出csv文件, 我们完全可以通过流的方式导出, 但是在excel中, 由于文件类型的限制, 我们很难把excel通过流的方式直接导出, 最终选择了[exceljs](https://github.com/guyonroche/exceljs)
 
-### 编码格式
+## 编码格式
 
 - node.js支持 `ascii` 、`utf8`、`base64`、`binary` 编码方式，不支持 `utf-8 + BOM(字节顺序标记)` 格式, 而微软给utf8加了BOM头(在windows下不管是utf8还是utf16(Unicode)都有BOM, utf16自带BOM头), 因此excel会出现中文乱码, 因此我们需要在文件头加上三个标识字节, 由于utf8对应的BOM是 `EF BB BF` [传送门](https://zh.wikipedia.org/wiki/%E4%BD%8D%E5%85%83%E7%B5%84%E9%A0%86%E5%BA%8F%E8%A8%98%E8%99%9F), 因此这么实现: `res.write(Buffer.from('\xEF\xBB\xBF', 'binary'))` 
 
 - 既然是导出excel文件, 那文件内容('Content-Type')是什么, 最终在StackOverflow上找到了答案, 传送门[StackOverflow](https://stackoverflow.com/questions/4212861/what-is-a-correct-mime-type-for-docx-pptx-etc), 文件类型有专属的Office套件: `'Content-Type': 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'`
 
 
-### 实现
+## 实现
 
 使用exceljs最重要的原因是支持伪流
 
