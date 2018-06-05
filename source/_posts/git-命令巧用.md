@@ -96,3 +96,11 @@ Once you are satisfied with your changes, run
 ```
 
 是的，现在我们可以修改(amend) commit 了，键入 `git commit --amend`, 将会进入编辑 commitId 为 `898d986` 的编辑界面，可以修改提交信息并保存退出，完毕之后键入 `git rebase --continue` 将自动合并 commit `9b557fb`，修改结束。
+
+## 修改了 `.gitignore` 如何生效
+
+```shell
+git rm -r --cached .  // 移除当前工作空间的文件版本
+git add .
+git commit -m ".gitignore is now working"
+```
