@@ -340,7 +340,11 @@ http://ipfs.io/ipfs/Qmay5SpLXHq8Up4VkHwu3D4pEkcyFkXsPAebrrSaAmVo84 顺利的话�
 
 可不可以自豪的说: 只要世界还存在一个 `IPFS` 节点，我们此时此刻上传的文件就不会消失呢？
 
+# 留下的思考
 
+- ipfs 有什么缺点？
+- ipfs 和bittorrent有什么区别？
+- 现有哪些商业系统能否改成ipfs系统？
 
 # 写在最后
 
