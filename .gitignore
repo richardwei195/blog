@@ -6,3 +6,5 @@ node_modules/
 public/
 .deploy*/
 _config.yml
+themes/cactus/.gitignore
+themes/cactus/_config.yml
