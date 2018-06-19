@@ -7,7 +7,7 @@ tags: git
 > [原文链接](https://zwischenzugs.com/2018/03/26/git-log-the-good-parts/?utm_source=wanqu.co&utm_campaign=Wanqu+Daily&utm_medium=website)
 
 假设您正在与多个开发者共同维护管理复杂的 git 代码库，那您可能会使用`GitHub` 或 `BitBucket` 等工具有深入研究提交历史，并且希望从中找出分支以及合并 `issue`  的相关问题。
-
+<!-- more -->
 
 
 图形化界面为用户提供了非常友好的接口来管理 PR 以及查看一些简单的历史记录，但是当工作流程 SHTF (译者注: 这里我理解为是混乱、糟糕的意思) 已经不能用 git log 来替代或者一些相关的标记来挖掘出实际的情况时，你应该和我一起来通过命令行去学习还有掌握它(git log) 。

@@ -6,7 +6,7 @@ tags:
   - javascript
 ---
 > 众多的库中，能够很轻松的找到解析xlsx, csv格式文件的第三方库，并且有许多质量不错的库，如 `node-xlsx` , `excel-parser`,  `excel-export`等，都能够帮助我们解析或者生成xlsx, csv文件，但是大部分都局限于文件
-
+<!-- more -->
 [GitHub](https://github.com/richardwei195/tb-excel)
 
 # 背景

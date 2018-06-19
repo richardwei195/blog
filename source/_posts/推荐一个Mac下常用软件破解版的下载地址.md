@@ -4,7 +4,7 @@ date: 2018-04-23 21:31:22
 tags:
   - tool
 ---
-
+<!-- more -->
 ## 常用的开发工具:
 
   - 矢量设计工具: [sketch](http://xclient.info/s/sketch.html)

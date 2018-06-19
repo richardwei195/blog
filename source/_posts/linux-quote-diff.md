@@ -12,7 +12,7 @@ tags:
 scenarioFieldConfig's _id
 ```
 有哪几种方式可以实现呢?
-
+<!-- more -->
 因为包含了 `'`，用 `""` 包起来是最简单容易的一种方式，比如:
 
 ```shell

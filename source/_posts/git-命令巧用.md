@@ -10,7 +10,7 @@ tags:
 ```shell
 git checkout commitId -- file1 file2 file3
 ```
-
+<!-- more -->
 ## 一条命令将改动的文件加入工作区并提交 commit
 
 ```shell

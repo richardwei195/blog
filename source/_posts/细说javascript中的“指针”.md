@@ -16,7 +16,7 @@ const Hoek = require(&#39;hoek&#39;);
 SyntaxError: Use of const in strict mode.
 } 
 ```
-
+<!-- more -->
 代码中有些乱码咱们就不细看，如果我们了解ES5的话，这是ES5所提供的`严格模式`, 解决方法可以是在文件或代码前加上"use strict"，如果不是很了解，可以参考文章[Javascript 严格模式详解](http://www.ruanyifeng.com/blog/2013/01/javascript_strict_mode.html)
 
 很久没有遇到这类问题啦，所以就联想到当初遇到的一个大坑:关于js变量指向的内存地址和指针(有朋友会问，js中有指针的概念吗，js是有传址这一概念的-。-)。
