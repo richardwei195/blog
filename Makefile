@@ -1,4 +1,4 @@
-REMOTE_ADDRESS = root@101.37.89.10
+REMOTE_ADDRESS = root@39.106.138.226
 
 deploy:
 	hexo generate
