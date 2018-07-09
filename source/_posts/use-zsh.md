@@ -29,7 +29,7 @@ tags:
 
 ## zsh 的安装与使用
 
-> 以下例子全部基于 centOS 7.4 实现
+> 以下例子全部基于 centOS 7.4 实现, macOS 类似
 
 通用 `yum` 安装:
 
@@ -75,4 +75,100 @@ Shell changed.
 
 安装好 `zsh` 之后，他还并不像我们前面所描述的那样这么强大，我们还需要一个很酷的工具 `Oh My Zsh` 来管理和扩展我们的 `zsh`
 
-## 安装 Oh My Zsh
+## Oh My Zsh
+
+[官网地址](https://ohmyz.sh/)
+
+官网的描述: ` It comes bundled with a ton of helpful functions, helpers, plugins, themes, and a few things that make you shout...`
+
+支持超多的扩展函数、插件以及主题等; 具体有什么用，根据我的使用习惯列出了一个清单:
+
+**Plugins**
+- git: 强大的 git 缩写命令(默认已开启)
+- zsh-autosuggestions: shell 命令提示，自动补全可能的路径
+- zsh-syntax-highlighting: 特殊命令高亮提示
+
+**Themes**
+- robbyrussell: 默认主题，很好看
+- af-magic
+- agnoster: 暗系主题
+- avit: 界面干净
+
+- **alias**: 超链接别名，特有用，后文会提到如何使用
+
+### 安装
+
+```shell
+1、
+git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+2、
+cp ~/.zshrc ~/.zshrc.orig
+3、
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+4、
+chsh -s /bin/zsh
+```
+
+安装成功后，重新打开一个新的终端，如果发现界面主题已经改变，代表安装成功配置已经生效了。
+
+**为了保证配置的有效性，我们可以输入简单的命令进行验证:**
+
+```shell
+➜  ~ la
+总用量 100K
+-rw-------   1 root root  852 7月   1 18:02 .bash_history
+-rw-r--r--.  1 root root   18 12月 29 2013 .bash_logout
+-rw-r--r--.  1 root root  176 12月 29 2013 .bash_profile
+-rw-r--r--.  1 root root  176 12月 29 2013 .bashrc
+drwx------   3 root root 4.0K 10月 15 2017 .cache
+drwx------   3 root root 4.0K 7月   2 22:30 .config
+-rw-r--r--.  1 root root  100 12月 29 2013 .cshrc
+-rw-------   1 root root    0 7月   2 22:29 .node_repl_history
+drwxr-xr-x  11 root root 4.0K 7月   1 18:04 .oh-my-zsh
+drwxr-xr-x   2 root root 4.0K 10月 15 2017 .pip
+drwxr-----   3 root root 4.0K 7月   1 18:04 .pki
+-rw-r--r--   1 root root   64 10月 15 2017 .pydistutils.cfg
+drwx------   2 root root 4.0K 7月   2 22:28 .ssh
+-rw-r--r--.  1 root root  129 12月 29 2013 .tcshrc
+-rw-------   1 root root 3.3K 7月   7 23:22 .viminfo
+-rw-r--r--   1 root root  36K 7月   1 18:07 .zcompdump-iZ2zea8scx4z0lcmstkb0rZ-5.0.2
+-rw-------   1 root root 2.6K 7月   9 09:18 .zsh_history
+-rw-r--r--   1 root root 3.1K 7月   1 18:07 .zshrc
+-rw-r--r--   1 root root    0 7月   1 18:07 .zshrc.orig
+```
+
+如果`la` 代替了命令 `ls -a`，恭喜你安装成功。
+
+### 主题选择
+
+关于主题的选择，默认的主题 `robbyrussell` 对我来说已经很满足了，如果对主题有更多要求和追求改变，可以从[这里选择相应主题进行切换](https://github.com/robbyrussell/oh-my-zsh/wiki/Themes)。
+
+这里描述一下如何切换主题:
+
+```shell
+1. 打开配置文件
+➜  ~ vim ~/.zshrc
+2. 找到主题配置所在行`ZSH_THEME`，切换对应的主题即可
+ZSH_THEME="robbyrussell"
+3. :wq 保存退出，source ~/.zshrc 使配置文件生效，打开新终端
+```
+
+### 插件选择和配置
+
+插件的配置:
+
+```shell
+1. 打开配置文件
+➜  ~ vim ~/.zshrc
+2. 找到插件配置所在行`plugins`
+plugins=(
+  git
+)
+3. 如果需要增加一个插件，只需要:
+plugins=(
+  git
+  zsh-autosuggestions
+)
+```
+
+#### git
