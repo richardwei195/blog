@@ -153,6 +153,8 @@ ZSH_THEME="robbyrussell"
 3. :wq 保存退出，source ~/.zshrc 使配置文件生效，打开新终端
 ```
 
+### alias 别名的使用
+
 ### 插件选择和配置
 
 插件的配置:
@@ -172,3 +174,5 @@ plugins=(
 ```
 
 #### git
+
+https://hufangyun.com/2017/zsh-plugin/
