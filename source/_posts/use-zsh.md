@@ -12,13 +12,13 @@ tags:
 
 知乎传送门: [为什么说 `zsh` 是 `shell` 中的「极品」？](https://www.zhihu.com/question/21418449)
 
-# # zsh 是什么？
+# # **zsh 是什么？**
 
 > Z Shell(Zsh) 是一种Unix shell，它可以用作为交互式的登录shell，也是一种强大的shell脚本命令解释器。Zsh可以认为是一种Bourne shell的扩展，带有数量庞大的改进，包括一些bash、ksh、tcsh的功能。
 
 简而言之，就是 `shell` 脚本语言的一种扩展与加强。
 
-# # zsh 有哪些功能？
+# # **zsh 有哪些功能？**
 
 > [From Wiki](https://zh.wikipedia.org/wiki/Z_shell)
 
@@ -34,7 +34,7 @@ tags:
 
 <!-- more -->
 
-# # zsh 的安装与使用
+# # **zsh 的安装与使用**
 
 > 以下例子全部基于 centOS 7.4 实现, macOS 类似
 
@@ -82,7 +82,7 @@ Shell changed.
 
 安装好 `zsh` 之后，他还并不像我们前面所描述的那样这么强大，我们还需要一个很酷的工具 `Oh My Zsh` 来管理和扩展我们的 `zsh`
 
-# # Oh My Zsh
+# # **Oh My Zsh**
 
 [官网地址](https://ohmyz.sh/)
 
@@ -103,7 +103,7 @@ Shell changed.
 
 - **alias**: 超链接别名，特有用，后文会提到如何使用
 
-## # 安装
+## # **安装**
 
 ```shell
 1、
@@ -146,7 +146,7 @@ drwx------   2 root root 4.0K 7月   2 22:28 .ssh
 
 如果`la` 代替了命令 `ls -a`，恭喜你安装成功。
 
-## # 主题选择
+## # **主题选择**
 
 关于主题的选择，默认的主题 `robbyrussell` 对我来说已经很满足了，如果对主题有更多要求和追求改变，可以从[这里选择相应主题进行切换](https://github.com/robbyrussell/oh-my-zsh/wiki/Themes)。
 
@@ -160,7 +160,7 @@ ZSH_THEME="robbyrussell"
 3. :wq 保存退出，source ~/.zshrc 使配置文件生效，打开新终端
 ```
 
-## # alias 别名的使用
+## # **alias 别名的使用**
 
 在配置文件 `.zshrc` 中，默认有一部分设置别名的例子:
 
@@ -187,7 +187,7 @@ myblog 键入此命令会发现已经进入对应的博客目录了
 
 对于一些我们常用的命令，但是又比较繁琐且固定的，完全可以使用 `alias` 别名来代替，会有效的提高我们的工作效率。
 
-## # 插件选择和配置
+## # **插件选择和配置**
 
 插件的配置:
 
@@ -205,7 +205,7 @@ plugins=(
 )
 ```
 
-### git
+### **git**
 > 使用缩写代替各种复杂 git 命令
 
 `git` 插件默认已经配置开启，我们可以通过 
@@ -221,7 +221,8 @@ plugins=(
 简直就是冗长并且难记命令的克星
 
 
-### zsh-autosuggestions
+### **zsh-autosuggestions**
+
 > 效率神器，命令自动推断及补全，超级好用
 
 **安装**:
@@ -239,7 +240,8 @@ plugins=(
 ![suggest](suggest.png)
 
 
-### zsh-syntax-highlighting
+### **zsh-syntax-highlighting**
+
 > shell 命令高亮提示
 
 **官网 Demo:**
