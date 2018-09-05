@@ -1,6 +1,9 @@
 ---
 title: nodejs通过tb-excel自定义解析Excel
 date: 2017-08-11 10:40:35
+author: 
+  nick: Richardwei
+  link: https://github.com/richardwei195
 tags:
   - nodejs
   - javascript

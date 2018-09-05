@@ -1,6 +1,9 @@
 ---
 title: '细说javascript中的“指针”'
 date: 2018-01-17 14:05:23
+author: 
+  nick: Richardwei
+  link: https://github.com/richardwei195
 tags:
   - nodejs
   - javascript

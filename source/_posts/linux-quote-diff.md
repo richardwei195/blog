@@ -1,6 +1,10 @@
 ---
 title: Linux--单双引号之分
 date: 2018-06-06 16:17:30
+cover: https://www.logicsupply.com/explore/io-hub/wp-content/uploads/2009/01/Read-only-Linux.jpg
+author: 
+  nick: Richardwei
+  link: https://github.com/richardwei195
 tags:
   - linux
 ---

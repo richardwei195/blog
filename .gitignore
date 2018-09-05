@@ -6,6 +6,5 @@ node_modules/
 public/
 .deploy*/
 _config.yml
-themes/cactus/_config.yml
-themes/even/_config.yml
+themes/
 .vscode

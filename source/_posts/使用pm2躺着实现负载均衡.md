@@ -1,6 +1,10 @@
 ---
 title: 使用pm2躺着实现负载均衡
 date: 2016-12-23 13:56:40
+cover: http://ww1.sinaimg.cn/mw690/63918611gw1fadw9qfvhoj20t00bg0u3.jpg
+author: 
+  nick: Richardwei
+  link: https://github.com/richardwei195
 tags: 
   - pm2
   - nodejs

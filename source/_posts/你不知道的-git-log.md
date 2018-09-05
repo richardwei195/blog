@@ -1,6 +1,10 @@
 ---
 title: 你不知道的 git log
 date: 2018-04-12 17:11:48
+cover: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPggPnZiCW9SF_dxS4TB8FQ7l7v58u8W6WeagVZNcGfQMVNoNIog
+author: 
+  nick: Richardwei
+  link: https://github.com/richardwei195
 tags: git
 ---
 

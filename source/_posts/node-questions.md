@@ -1,5 +1,9 @@
 ---
 title: Node.js 知多少
+cover: https://pbs.twimg.com/profile_images/749981640609398784/-amtsDMY.jpg
+author: 
+  nick: Richardwei
+  link: https://github.com/richardwei195
 date: 2018-08-11 22:45:08
 tags:
   - nodejs

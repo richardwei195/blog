@@ -1,6 +1,10 @@
 ---
 title: mongodb诊断工具explain()最新API详解
 date: 2016-12-26 11:20:02
+cover: https://webassets.mongodb.com/_com_assets/cms/MongoDB-Logo-5c3a7405a85675366beb3a5ec4c032348c390b3f142f5e6dddf1d78e2df5cb5c.png
+author: 
+  nick: Richardwei
+  link: https://github.com/richardwei195
 tags:
   - mongodb
 ---

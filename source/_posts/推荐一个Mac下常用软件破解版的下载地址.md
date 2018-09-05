@@ -1,6 +1,10 @@
 ---
 title: 推荐Mac下常用软件(开发、设计), 文内有惊喜
+cover: https://cdn1.tekrevue.com/wp-content/uploads/2018/06/macos-mojave-featured-960x540.jpg
 date: 2018-04-23 21:31:22
+author: 
+  nick: Richardwei
+  link: https://github.com/richardwei195
 tags:
   - tool
 ---

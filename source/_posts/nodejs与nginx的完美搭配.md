@@ -1,6 +1,10 @@
 ---
 title: nodejs与nginx的完美搭配
 date: 2017-03-26 18:14:26
+cover: https://www.nginx.com/wp-content/themes/nginx-theme/assets/img/logo.png
+author: 
+  nick: Richardwei
+  link: https://github.com/richardwei195
 tags: 
   - nginx
   - nodejs

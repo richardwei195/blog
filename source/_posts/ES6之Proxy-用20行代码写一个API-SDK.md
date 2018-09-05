@@ -1,6 +1,10 @@
 ---
 title: ES6之Proxy-用20行代码写一个API SDK
 date: 2018-03-22 14:02:27
+cover: https://cdn-images-1.medium.com/max/1200/1*SL4sWHdjGR3vo0x5ta3xfw.jpeg
+author: 
+  nick: Richardwei
+  link: https://github.com/richardwei195
 tags:
   - nodejs
   - excel
