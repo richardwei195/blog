@@ -1,12 +1,9 @@
 ---
 title: git 命令巧用
 date: 2018-06-04 17:34:27
-cover: http://ipengineer.net/wp-content/uploads/2015/04/git-logo.jpg
-author: 
-  nick: Richardwei
-  link: https://github.com/richardwei195
+category: 技术
 tags:
-  - git
+  - Git
 ---
 
 ## 重置(reset)某次提交改动的文件

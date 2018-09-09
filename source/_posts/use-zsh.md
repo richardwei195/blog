@@ -1,13 +1,9 @@
 ---
 title: shell 中的极品-- zsh
 date: 2018-07-01 18:09:19
-cover: https://www.fullstackpython.com/img/logos/zsh.jpg
-author: 
-  nick: Richardwei
-  link: https://github.com/richardwei195
+category: 技术
 tags:
-  - linux
-  - skills
+  - Linux
 ---
 
 ![title](title.png)

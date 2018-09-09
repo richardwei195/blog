@@ -1,11 +1,8 @@
 ---
 title: 你不知道的 git log
 date: 2018-04-12 17:11:48
-cover: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPggPnZiCW9SF_dxS4TB8FQ7l7v58u8W6WeagVZNcGfQMVNoNIog
-author: 
-  nick: Richardwei
-  link: https://github.com/richardwei195
-tags: git
+category: 技术
+tags: Git
 ---
 
 > [原文链接](https://zwischenzugs.com/2018/03/26/git-log-the-good-parts/?utm_source=wanqu.co&utm_campaign=Wanqu+Daily&utm_medium=website)

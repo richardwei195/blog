@@ -1,13 +1,10 @@
 ---
 title: nodejs导出excel实战
 date: 2017-06-23 17:38:39
-cover: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Microsoft_Office_Excel_%282013%E2%80%93present%29.svg/1200px-Microsoft_Office_Excel_%282013%E2%80%93present%29.svg.png
-author: 
-  nick: Richardwei
-  link: https://github.com/richardwei195
+category: 技术
 tags:
-  - nodejs
-  - javascript
+  - Node.Js
+  - Javascript
 ---
 
 

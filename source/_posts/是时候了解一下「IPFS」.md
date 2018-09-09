@@ -1,15 +1,11 @@
 ---
 title: 是时候了解一下「IPFS」
 date: 2018-05-30 11:12:51
-cover: https://static.oschina.net/uploads/img/201702/15131818_XMsT.png
-author: 
-  nick: Richardwei
-  link: https://github.com/richardwei195
+category: 技术
 tags:
   - Web
   - Http
   - IPFS
-  - Tech
 ---
 
 # 背景

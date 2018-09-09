@@ -1,12 +1,10 @@
 ---
 title: nodejs通过tb-excel自定义解析Excel
 date: 2017-08-11 10:40:35
-author: 
-  nick: Richardwei
-  link: https://github.com/richardwei195
+category: 技术
 tags:
-  - nodejs
-  - javascript
+  - Node.Js
+  - Javascript
 ---
 > 众多的库中，能够很轻松的找到解析xlsx, csv格式文件的第三方库，并且有许多质量不错的库，如 `node-xlsx` , `excel-parser`,  `excel-export`等，都能够帮助我们解析或者生成xlsx, csv文件，但是大部分都局限于文件
 <!-- more -->
