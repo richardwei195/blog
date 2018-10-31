@@ -2,10 +2,6 @@
 title: 为你的网站启用 Https
 date: 2018-09-08 15:35:18
 category: 技术
-cover: https://upload.wikimedia.org/wikipedia/commons/d/da/Internet2.jpg
-author: 
-  nick: Richardwei
-  link: https://github.com/richardwei195
 tags:
   - Nginx
   - HTTPS
