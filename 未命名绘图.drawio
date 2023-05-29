@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-29T02:16:32.523Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="XgWYAjo_RQFtso4l5pDg" version="21.3.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-29T02:18:23.856Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="sPKZfrVNW0qCzxax_hGv" version="21.3.5" type="github">
   <diagram name="第 1 页" id="nkKFOPss-8CRhdRxjxcX">
     <mxGraphModel dx="760" dy="426" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -19,7 +19,7 @@
         <mxCell id="2UQits-GJqBjEGgYUCRo-5" value="服务器层" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="610" y="360" width="120" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="2UQits-GJqBjEGgYUCRo-7" value="架构层" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+        <mxCell id="2UQits-GJqBjEGgYUCRo-7" value="框架层" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
           <mxGeometry x="610" y="210" width="120" height="130" as="geometry" />
         </mxCell>
         <mxCell id="2UQits-GJqBjEGgYUCRo-9" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
@@ -36,6 +36,21 @@
         </mxCell>
         <mxCell id="2UQits-GJqBjEGgYUCRo-13" value="IPC Render" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="440" y="290" width="106" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2UQits-GJqBjEGgYUCRo-14" value="渲染层" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#b1ddf0;strokeColor=#10739e;" vertex="1" parent="1">
+          <mxGeometry x="610" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2UQits-GJqBjEGgYUCRo-15" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" vertex="1" parent="1">
+          <mxGeometry x="280" y="120" width="293" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2UQits-GJqBjEGgYUCRo-16" value="Vue" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="135" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2UQits-GJqBjEGgYUCRo-17" value="Vite" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="135" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2UQits-GJqBjEGgYUCRo-18" value="Element" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="135" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
