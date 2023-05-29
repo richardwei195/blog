@@ -1,14 +1,20 @@
-<mxfile host="app.diagrams.net" modified="2023-05-29T02:23:42.807Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="9FkbPTzO4AU7EhIt7Svp" version="21.3.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-29T02:24:18.746Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="T8lLehgLoVMsijYSycDg" version="21.3.5" type="github">
   <diagram name="第 1 页" id="i7Nl1X1JWIGGdcwZOCES">
     <mxGraphModel dx="513" dy="288" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="HTUoIQ_aqMkniWgsbpct-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
-          <mxGeometry x="250" y="240" width="150" height="110" as="geometry" />
+          <mxGeometry x="250" y="240" width="150" height="70" as="geometry" />
         </mxCell>
         <mxCell id="HTUoIQ_aqMkniWgsbpct-2" value="Main Process" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="285" y="240" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HTUoIQ_aqMkniWgsbpct-3" value="Native API" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="260" y="280" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="HTUoIQ_aqMkniWgsbpct-4" value="Nodejs" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="330" y="280" width="60" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
